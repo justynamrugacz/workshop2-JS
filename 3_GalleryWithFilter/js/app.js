@@ -4,23 +4,23 @@ var showButton = document.querySelector('#showButton');
 var hideButton = document.querySelector('#hideButton');
 
 
-showButton.addEventListener('click', function(){
-    for(var img of allImg){
+showButton.addEventListener('click', function () {
+    for (var img of allImg) {
         var tag = img.dataset.tag;
-        if(tag.includes(input.value)){
+        if (tag.includes(input.value)) {
             img.classList.remove('invisible');
-        }else{
+        } else {
             img.classList.add("invisible");
         }
     }
 })
 
-hideButton.addEventListener('click', function(){
-    for(var img of allImg){
+hideButton.addEventListener('click', function () {
+    for (var img of allImg) {
         var tag = img.dataset.tag;
-        if(tag.includes(input.value)){
+        if (tag.includes(input.value)) {
             img.classList.add('invisible');
-        }else{
+        } else {
             img.classList.remove("invisible");
         }
     }

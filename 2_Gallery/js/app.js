@@ -18,9 +18,9 @@ for (var i = 0; i < allLi.length; i++) {
  </div>`;
     body.innerHTML = fullScreen;
     var button = document.querySelector('button');
-      button.addEventListener('click', function (){
-        body.innerHTML = galleryHtml;
-      })
+    button.addEventListener('click', function () {
+      body.innerHTML = galleryHtml;
+    })
 
   })
 
